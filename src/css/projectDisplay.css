@@ -1,0 +1,44 @@
+:root {
+    /*Main colors for the website*/
+    --darkP: black;
+    --mainP: #5e288a;
+    --lightP: #f0deff;
+}
+
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+    user-select: none; 
+    text-align: center;
+    padding: 2%;
+    border-style: solid;
+    display:inline-block;
+    overflow: hidden;
+    background-color: var(--darkP);
+    color: var(--lightP);
+    width: 300px;
+    height: 200px;
+    margin-right: 10px!important;
+    margin-top: 0;
+}
+
+.project-name {
+  text-shadow:0 0 3px var(--lightP);
+}
+
+.project:last-child {
+  margin-right: 0;
+}
+
+.project:hover {
+    transition: box-shadow 0.5s;
+    box-shadow: 0 0 5px 5px var(--lightP);
+}
+
+html, body {
+  min-height: 100vh;
+}

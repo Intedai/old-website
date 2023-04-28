@@ -1,0 +1,42 @@
+.clickEffect{
+
+
+	z-index:100000;
+
+	/*when clicking on divs that change cursor it wont be affected
+	and the animation wont stop*/
+	pointer-events: none;
+	
+	box-sizing:border-box;
+
+	border-color: var(--lightP);
+	border-style:solid;
+	
+	border-radius:100%;
+	position:fixed;
+	animation:clickEffect 0.75s ease-out;
+}
+
+/*animation*/
+@keyframes clickEffect{
+
+	0%{
+
+		opacity:1;
+
+		width:0.5em;
+		height:0.5em;
+
+		margin:-0.25em;
+	}
+
+	100%{
+
+		opacity:0;
+		
+		width:10em;
+		height:10em;
+
+		margin:-5em;
+	}
+}

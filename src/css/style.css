@@ -1,0 +1,158 @@
+@media(-webkit-device-pixel-ratio:1),(-webkit-device-pixel-ratio:2),(-webkit-device-pixel-ratio:3),(-webkit-device-pixel-ratio:4),(-webkit-min-device-pixel-ratio:5) {
+    html {
+     image-rendering:pixelated
+    }
+}
+
+:root {
+    /*Main colors for the website*/
+    --darkP: black;
+    --mainP: #5e288a;
+    --lightP: #f0deff;
+
+    /*Social media colors*/
+    --linkedin: #0a66c2;
+    --mastodon: #6364FF;
+    --github: white;
+}
+
+/*IBM vga font*/
+@font-face {
+    font-family:ibm_vga;
+    src:url(../fonts/WebPlus_IBM_VGA_8x16.woff) format("woff");
+    font-weight:400
+}
+
+* {
+    font-family: ibm_vga;
+}
+
+body {
+    margin: 0;
+    background-color: var(--lightP);
+    background-image: url("bg.png");
+
+/*---navbar---*/
+}
+ul {
+    user-select: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    top: 0; 
+    position: fixed;
+    background-color: var(--mainP);
+    width: 100%;
+}
+li {
+    text-shadow:0 0 3px var(--lightP);
+
+    display: inline-block;
+}
+li a {
+    text-align: center;
+    color: var(--lightP);
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    transition: background 0.1s;
+}
+li a:hover:not(.active) {
+    background: var(--darkP);
+}
+#reset {
+    background-color: #ba1616;
+    border-style: solid;
+    border-color: black;
+    text-shadow:0 0 3px white;
+    color: white;
+}
+#reset:hover {
+    background-color: #770e0e;
+}
+
+#reset:active {
+    background-color: #33a737;
+    transform: translateY(4px);
+  }
+  
+  
+.active {
+    background: var(--lightP);
+    color: var(--mainP);
+    text-shadow:0 0 3px var(--mainP);
+}
+
+/*---middle---*/
+.Mid {
+    user-select: none; 
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 100px;
+    color: var(--lightP);
+}
+.Title {
+    font-size: 40px;
+    display:non;
+    text-shadow:0 0 5px var(--lightP);
+}
+.Description {
+    padding: 1.5%;
+    border-style: solid;
+    cursor: crosshair;
+    background-color: var(--darkP);
+}
+.Description:hover {
+    transition: box-shadow 0.5s;
+    box-shadow: 0 0 5px 5px var(--lightP);
+}
+
+/*---socials---*/
+.social {
+    text-decoration:none;
+    font-size: 20px;
+}
+
+.social:hover {
+    transition: text-shadow 0.5s;
+}
+#linkedin {
+    color: var(--linkedin);
+}
+#linkedin:hover {
+    text-shadow:0 0 5px var(--linkedin);
+}
+
+#mastodon {
+    color: var(--mastodon);
+}
+#mastodon:hover {
+    text-shadow:0 0 5px var(--mastodon);
+}
+
+#github {
+    color: var(--github);
+}
+#github:hover {
+    text-shadow:0 0 5px var(--github);
+}
+/*---Footer---*/
+#myFooter {
+    user-select: none; 
+    text-shadow:0 0 3px var(--lightP);
+
+    background-color: var(--mainP);
+    color: var(--lightP);
+    text-align: center;
+    float:left;
+    width:100%;
+    line-height:18px;
+    bottom: 0;
+    position: fixed;
+    padding:12px
+}
+#myFooter span:hover{
+    text-decoration-line: underline;
+}
