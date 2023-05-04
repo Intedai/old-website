@@ -1,6 +1,6 @@
 # Intedai's  Personal Website
 ## About the website
-A static website that is optimized for PC and Mobile usage, it only uses only HTML,CSS and JS.  
+A static website that is optimized for PC and Mobile usage, it only uses HTML,CSS and JS.  
 
 the website uses jscolor for the color picker,the IBM VGA Font from int10h.org and the Github API to display the projects
 
