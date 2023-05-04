@@ -1,53 +1,91 @@
-@media(-webkit-device-pixel-ratio:1),(-webkit-device-pixel-ratio:2),(-webkit-device-pixel-ratio:3),(-webkit-device-pixel-ratio:4),(-webkit-min-device-pixel-ratio:5) {
-    html {
-     image-rendering:pixelated
-    }
-}
-
+/* Variables */
 :root {
-    /*Main colors for the website*/
-    --darkP: black;
-    --mainP: #5e288a;
-    --lightP: #f0deff;
-
-    /*Social media colors*/
-    --linkedin: #0a66c2;
-    --mastodon: #6364FF;
-    --github: white;
+    /* Main colors for the website */
+     --darkP: black;
+     --mainP: #5e288a;
+     --lightP: #f0deff;
+    /* Social media colors */
+     --linkedin: #0a66c2;
+     --mastodon: #6364FF;
+     --github: white;
 }
 
-/*IBM vga font*/
+/* Responsive design */
+@media (max-width: 600px) {
+    #Navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+   }
+    .jscolor, #reset {
+        margin: 0.5em;
+   }
+    .Mid {
+        width: 100%;
+        margin: 1em auto;
+        padding: 0 1em;
+        text-align: center;
+   }
+    .Description {
+        font-size: 1.1em;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+   }
+    .Title {
+        font-size: 1.5em;
+   }
+    .social {
+        font-size: 1.1em;
+        margin: 0.5em;
+   }
+    #myFooter {
+        font-size: 1em;
+        width: 100%;
+        text-align: center;
+        padding: 0.5em 0;
+   }
+}
+
+/* IBM VGA font ( not copyrighted or anything )*/
 @font-face {
     font-family:ibm_vga;
     src:url(../fonts/WebPlus_IBM_VGA_8x16.woff) format("woff");
-    font-weight:400
+    font-weight:400 
 }
 
 * {
     font-family: ibm_vga;
 }
 
+/* General */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: var(--lightP);
     background-image: url("bg.png");
-
-/*---navbar---*/
 }
+
+/* Navbar */
 ul {
     user-select: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
     text-align: center;
-    top: 0; 
+    top: 0;
     position: fixed;
     background-color: var(--mainP);
     width: 100%;
 }
 li {
     text-shadow:0 0 3px var(--lightP);
-
     display: inline-block;
 }
 li a {
@@ -61,6 +99,8 @@ li a {
 li a:hover:not(.active) {
     background: var(--darkP);
 }
+
+/* Reset Button */
 #reset {
     background-color: #ba1616;
     border-style: solid;
@@ -71,22 +111,19 @@ li a:hover:not(.active) {
 #reset:hover {
     background-color: #770e0e;
 }
-
 #reset:active {
     background-color: #33a737;
     transform: translateY(4px);
-  }
-  
-  
+}
 .active {
     background: var(--lightP);
     color: var(--mainP);
     text-shadow:0 0 3px var(--mainP);
 }
 
-/*---middle---*/
+/* Middle */
 .Mid {
-    user-select: none; 
+    user-select: none;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -103,18 +140,18 @@ li a:hover:not(.active) {
     border-style: solid;
     cursor: crosshair;
     background-color: var(--darkP);
+    word-wrap: break-word;
+    font-size: 1.1em;
 }
 .Description:hover {
     transition: box-shadow 0.5s;
     box-shadow: 0 0 5px 5px var(--lightP);
 }
-
 /*---socials---*/
 .social {
     text-decoration:none;
     font-size: 20px;
 }
-
 .social:hover {
     transition: text-shadow 0.5s;
 }
@@ -124,25 +161,23 @@ li a:hover:not(.active) {
 #linkedin:hover {
     text-shadow:0 0 5px var(--linkedin);
 }
-
 #mastodon {
     color: var(--mastodon);
 }
 #mastodon:hover {
     text-shadow:0 0 5px var(--mastodon);
 }
-
 #github {
     color: var(--github);
 }
 #github:hover {
     text-shadow:0 0 5px var(--github);
 }
-/*---Footer---*/
-#myFooter {
-    user-select: none; 
-    text-shadow:0 0 3px var(--lightP);
 
+/* Footer */
+#myFooter {
+    user-select: none;
+    text-shadow:0 0 3px var(--lightP);
     background-color: var(--mainP);
     color: var(--lightP);
     text-align: center;
@@ -151,7 +186,7 @@ li a:hover:not(.active) {
     line-height:18px;
     bottom: 0;
     position: fixed;
-    padding:12px
+    padding:12px 
 }
 #myFooter span:hover{
     text-decoration-line: underline;
