@@ -1,4 +1,8 @@
 # Intedai's  Personal Website
+
+## Domain
+https://www.intedai.com
+
 ## About the website
 A static website that is optimized for PC and Mobile usage, it only uses HTML,CSS and JS.  
 
