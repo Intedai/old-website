@@ -51,7 +51,7 @@
 /* IBM VGA font ( not copyrighted or anything )*/
 @font-face {
     font-family:ibm_vga;
-    src:url(../fonts/WebPlus_IBM_VGA_8x16.woff) format("woff");
+    src:url(../../Assets/fonts/WebPlus_IBM_VGA_8x16.woff) format("woff");
     font-weight:400 
 }
 
