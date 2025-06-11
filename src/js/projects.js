@@ -43,7 +43,9 @@ function projectsAdder()
     // Access the JSON data here
     for(let i = 0; i < data.length; i++)
     {
-      if (data[i]['id'] == githubConfigID) continue;
+      // Skip config repo and repos i've contributed to but didn't create
+      if (data[i]['id'] == githubConfigID || data[i]['fork'] ) continue;
+
       addProject(data[i]["name"],data[i]["description"],data[i]["html_url"])
     }
     // Loop through the repositories and display the names
