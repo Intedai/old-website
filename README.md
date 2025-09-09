@@ -1,12 +1,9 @@
-# Intedai's  Personal Website
-
+# Intedai's  Old Website
 ## Domain
-https://www.intedai.com
+this page's domain was intedai.com but I stopped renewing it, my new domain is intedai.dev and it will lead to my new website
 
 ## About the website
 A static website that is optimized for PC and Mobile usage, it only uses HTML,CSS and JS.  
-
-the website uses jscolor for the color picker,the IBM VGA Font from int10h.org and the Github API to display the projects
 
 ## Preview
 ![full](https://user-images.githubusercontent.com/69306633/236333034-9b8e4415-df72-4ff0-9bfd-b00bdc3957e9.png)
