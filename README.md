@@ -16,8 +16,3 @@ A static website that is optimized for PC and Mobile usage, it only uses HTML,CS
 
 ## Click Effect
 https://user-images.githubusercontent.com/69306633/236333063-25b2c9b4-95ea-45c1-bb2d-795d7325f893.mp4
-
-## Color Picker (using jscolor)
-Feature does not exist anymore, it was removed because I didn't like it
-https://user-images.githubusercontent.com/69306633/236333409-6f9dbc1c-fdfe-46e1-be37-b7d8053edc59.mp4
-
